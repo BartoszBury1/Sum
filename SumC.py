@@ -44,17 +44,17 @@ if __name__ == '__main__':
         if len(Tab) % 2 == 1:
 
             nieparzysty_element += Tab.pop()
-        polowa_dlugosci_listy = len(Tab) // 2
+        PolListy = len(Tab) // 2
 
-        if polowa_dlugosci_listy%2 == 0:
+        if PolListy%2 == 0:
 
-            Fhalf = Tab[:polowa_dlugosci_listy]
-            Shalf = Tab[polowa_dlugosci_listy:]
+            Fhalf = Tab[:PolListy]
+            Shalf = Tab[PolListy:]
 
         else:
 
-            Fhalf = Tab[:polowa_dlugosci_listy+1]
-            Shalf = Tab[polowa_dlugosci_listy+1:]
+            Fhalf = Tab[:PolListy+1]
+            Shalf = Tab[PolListy+1:]
 
         a = np.array(Fhalf)  
         d = np.array(Shalf)
